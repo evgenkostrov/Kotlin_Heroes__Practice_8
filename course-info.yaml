@@ -1,0 +1,18 @@
+type: codeforces
+title: 'Kotlin Heroes: Practice 8'
+language: Russian
+summary: |-
+  A. A+B (пробная задача)
+  B. Желтые карточки
+  C. Стрельба
+  D. Достижимые числа
+  E. Удаление нулей
+  F. Заполнение квадратов
+  G. XOR-угадайка
+  H. Чайнворд
+  I. Минимальная разница
+programming_language: Kotlin
+content:
+- Problems
+end_date_time: 1633613700.000000000
+mode: Study

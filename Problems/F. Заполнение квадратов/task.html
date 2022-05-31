@@ -1,0 +1,117 @@
+<div class="problem-statement">
+ <div class="header">
+  <div class="title">
+   F. Заполнение квадратов
+  </div>
+  <div class="time-limit">
+   <div class="property-title">
+    ограничение по времени на тест
+   </div>2.0 с
+  </div>
+  <div class="memory-limit">
+   <div class="property-title">
+    ограничение по памяти на тест
+   </div>512 МБ
+  </div>
+  <div class="input-file">
+   <div class="property-title">
+    ввод
+   </div>стандартный ввод
+  </div>
+  <div class="output-file">
+   <div class="property-title">
+    вывод
+   </div>стандартный вывод
+  </div>
+ </div>
+ <div>
+  <p>Вам заданы две матрицы $A$ и $B$. В каждой матрице ровно $n$ строк и $m$ столбцов. Каждый элемент $A$ — $0$ или $1$; каждый элемент $B$ изначально равен $0$.</p>
+  <p>Вы можете провести любое количество операций с матрицей $B$. Для проведения операции вы должны выбрать любую подматрицу $B$ размера $2 \times 2$ и заменить все элементы в этой подматрице на $1$. Иными словами, вы выбираете два целых числа $x$ и $y$ ($1 \le x &lt; n$, $1 \le y &lt; m$), а затем заменяете все элементы $B_{x, y}$, $B_{x, y + 1}$, $B_{x + 1, y}$ и $B_{x + 1, y + 1}$ на $1$.</p>
+  <p>Ваша задача — сделать матрицу $B$ равной матрице $A$. Две матрицы $A$ и $B$ равны тогда и только тогда, когда каждый элемент матрицы $A$ равен соответствующему элементу матрицы $B$.</p>
+  <p>Можно ли сделать матрицы равными? Если это так, вы должны найти последовательность операций, которые делают матрицу $B$ равной матрице $A$. Обратите внимание, что минимизировать количество операций не нужно.</p>
+ </div>
+ <div class="input-specification">
+  <div class="section-title">
+   Входные данные
+  </div>
+  <p>В первой строке записаны два целых числа $n$ и $m$ ($2 \le n, m \le 50$).</p>
+  <p>Затем следуют $n$ строк, в каждой по $m$ целых чисел. $j$-е число в $i$-й строке — $A_{i, j}$. Каждое число равно либо $0$, либо $1$.</p>
+ </div>
+ <div class="output-specification">
+  <div class="section-title">
+   Выходные данные
+  </div>
+  <p>Если невозможно сделать $B$ равной $A$, выведите одно число $-1$.</p>
+  <p>Иначе выведите любую последовательность операций, превращающую $B$ в $A$, в следующем формате: в первой строке выведите одно целое число $k$ — количество операций, а затем выведите $k$ строк, в каждой из которых должны быть два целых числа $x$ и $y$ для соответствующей операции (заменить все элементы $B_{x, y}$, $B_{x, y + 1}$, $B_{x + 1, y}$ и $B_{x + 1, y + 1}$ на $1$). Должно выполняться условие $0 \le k \le 2500$.</p>
+ </div>
+ <div class="sample-tests">
+  <div class="section-title">
+   Примеры
+  </div>
+  <div class="sample-test">
+   <div class="input">
+    <div class="title">
+     Входные данные
+    </div>
+    <pre>3 3
+1 1 1
+1 1 1
+0 1 1
+</pre>
+   </div>
+   <div class="output">
+    <div class="title">
+     Выходные данные
+    </div>
+    <pre>3
+1 1
+1 2
+2 2
+</pre>
+   </div>
+   <div class="input">
+    <div class="title">
+     Входные данные
+    </div>
+    <pre>3 3
+1 0 1
+1 0 1
+0 0 0
+</pre>
+   </div>
+   <div class="output">
+    <div class="title">
+     Выходные данные
+    </div>
+    <pre>-1
+</pre>
+   </div>
+   <div class="input">
+    <div class="title">
+     Входные данные
+    </div>
+    <pre>3 2
+0 0
+0 0
+0 0
+</pre>
+   </div>
+   <div class="output">
+    <div class="title">
+     Выходные данные
+    </div>
+    <pre>0
+</pre>
+   </div>
+  </div>
+ </div>
+ <div class="note">
+  <div class="section-title">
+   Примечание
+  </div>
+  <p>Иллюстрация к ответу на первый тест:</p>
+  <center>
+    $\begin{matrix} 0 &amp; 0 &amp; 0 &amp; &amp; 1 &amp; 1 &amp; 0 &amp; &amp; 1 &amp; 1 &amp; 1 &amp; &amp; 1 &amp; 1 &amp; 1 \\ 0 &amp; 0 &amp; 0 &amp; \rightarrow &amp; 1 &amp; 1 &amp; 0 &amp; \rightarrow &amp; 1 &amp; 1 &amp; 1 &amp; \rightarrow &amp; 1 &amp; 1 &amp; 1 \\ 0 &amp; 0 &amp; 0 &amp; &amp; 0 &amp; 0 &amp; 0 &amp; &amp; 0 &amp; 0 &amp; 0 &amp; &amp; 0 &amp; 1 &amp; 1 \end{matrix}$ 
+  </center>
+ </div>
+</div>

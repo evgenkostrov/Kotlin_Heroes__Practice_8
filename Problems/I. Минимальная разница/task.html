@@ -1,0 +1,94 @@
+<div class="problem-statement">
+ <div class="header">
+  <div class="title">
+   I. Минимальная разница
+  </div>
+  <div class="time-limit">
+   <div class="property-title">
+    ограничение по времени на тест
+   </div>10.0 с
+  </div>
+  <div class="memory-limit">
+   <div class="property-title">
+    ограничение по памяти на тест
+   </div>512 МБ
+  </div>
+  <div class="input-file">
+   <div class="property-title">
+    ввод
+   </div>стандартный ввод
+  </div>
+  <div class="output-file">
+   <div class="property-title">
+    вывод
+   </div>стандартный вывод
+  </div>
+ </div>
+ <div>
+  <p>Задан целочисленный массив $a$ размера $n$.</p>
+  <p>Вам предстоит выполнить $m$ запросов. Каждый запрос имеет один из двух типов: </p>
+  <ul> 
+   <li> «$1$ $l$ $r$ $k$» — вычислите минимальное значение $dif$ такое, что существуют $k$ <span class="tex-font-style-bf">различных</span> целых чисел $x_1, x_2, \dots, x_k$ таких, что $cnt_i &gt; 0$ (для каждого $i \in [1, k]$) и $|cnt_i - cnt_j| \le dif$ (для каждого $i \in [1, k], j \in [1, k]$), где $cnt_i$ — это число вхождений $x_i$ в подмассив $a[l..r]$. Если невозможно выбрать $k$ целых чисел, сообщите об этом; </li>
+   <li> «$2$ $p$ $x$» — присвоить $a_{p} := x$. </li>
+  </ul>
+ </div>
+ <div class="input-specification">
+  <div class="section-title">
+   Входные данные
+  </div>
+  <p>Первая строка содержит два целых числа $n$ и $m$ ($1 \le n, m \le 10^5$) — размер массива $a$ и количество запросов.</p>
+  <p>Вторая строка содержит $n$ целых чисел $a_1, a_2, \dots, a_n$ ($1 \le a_i \le 10^5$).</p>
+  <p>Следующие $m$ строк содержат запросы (по одному на строку). Каждый запрос имеет один из двух типов: </p>
+  <ul> 
+   <li> «$1$ $l$ $r$ $k$» ($1 \le l \le r \le n; 1 \le k \le 10^5$) </li>
+   <li> «$2$ $p$ $x$» ($1 \le p \le n; 1 \le x \le 10^5$). </li>
+  </ul>
+  <p>Гарантируется, что есть хотя бы один запрос первого типа.</p>
+ </div>
+ <div class="output-specification">
+  <div class="section-title">
+   Выходные данные
+  </div>
+  <p>Для каждого запроса первого типа выведите минимальное значение $dif$, удовлетворяющее всем необходимым условиям, или $-1$, если невозможно выбрать $k$ различных целых чисел.</p>
+ </div>
+ <div class="sample-tests">
+  <div class="section-title">
+   Пример
+  </div>
+  <div class="sample-test">
+   <div class="input">
+    <div class="title">
+     Входные данные
+    </div>
+    <pre>12 11
+2 1 1 2 1 1 3 2 1 1 3 3
+1 2 10 3
+1 2 11 3
+2 7 2
+1 3 9 2
+1 1 12 1
+1 1 12 4
+2 12 4
+1 1 12 4
+2 1 5
+1 3 12 2
+1 1 4 3
+</pre>
+   </div>
+   <div class="output">
+    <div class="title">
+     Выходные данные
+    </div>
+    <pre>5
+4
+1
+0
+-1
+5
+0
+1
+</pre>
+   </div>
+  </div>
+ </div>
+</div>

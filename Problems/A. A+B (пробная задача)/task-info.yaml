@@ -1,0 +1,39 @@
+type: codeforces
+files:
+- name: testData/1/input.txt
+  visible: true
+  text: |-
+    4
+    1 5
+    314 15
+    -99 99
+    123 987
+  learner_created: false
+- name: testData/1/output.txt
+  visible: true
+  text: |-
+    6
+    329
+    0
+    1110
+  learner_created: false
+- name: src/Main.kt
+  visible: true
+  text: |-
+    /**
+     * Accomplished using the EduTools plugin by JetBrains https://plugins.jetbrains.com/plugin/10081-edutools
+     *
+     * To modify the template, go to Preferences -> Editor -> File and Code Templates -> Other
+     */
+
+    fun main() {
+        // Write your solution here
+    }
+  learner_created: false
+- name: testData/1/latest_output.txt
+  visible: true
+  learner_created: true
+feedback_link: https://codeforces.com/contest/1570/problem/A?locale=ru
+status: Unchecked
+feedback:
+  time: Tue, 31 May 2022 07:49:42 UTC

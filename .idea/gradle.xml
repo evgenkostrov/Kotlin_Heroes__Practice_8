@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="distributionType" value="WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Problems/A. A+B (пробная задача)" />
+            <option value="$PROJECT_DIR$/Problems/B. Желтые карточки" />
+            <option value="$PROJECT_DIR$/Problems/C. Стрельба" />
+            <option value="$PROJECT_DIR$/Problems/D. Достижимые числа" />
+            <option value="$PROJECT_DIR$/Problems/E. Удаление нулей" />
+            <option value="$PROJECT_DIR$/Problems/F. Заполнение квадратов" />
+            <option value="$PROJECT_DIR$/Problems/G. XOR-угадайка" />
+            <option value="$PROJECT_DIR$/Problems/H. Чайнворд" />
+            <option value="$PROJECT_DIR$/Problems/I. Минимальная разница" />
+            <option value="$PROJECT_DIR$/util" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

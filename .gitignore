@@ -1,0 +1,4 @@
+# Project exclude paths
+/.gradle/
+/Problems/A. A+B (пробная задача)/out/
+/Problems/A. A+B (пробная задача)/out/production/classes/

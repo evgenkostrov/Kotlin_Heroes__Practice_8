@@ -1,0 +1,77 @@
+<div class="problem-statement">
+ <div class="header">
+  <div class="title">
+   E. Удаление нулей
+  </div>
+  <div class="time-limit">
+   <div class="property-title">
+    ограничение по времени на тест
+   </div>2.0 с
+  </div>
+  <div class="memory-limit">
+   <div class="property-title">
+    ограничение по памяти на тест
+   </div>512 МБ
+  </div>
+  <div class="input-file">
+   <div class="property-title">
+    ввод
+   </div>стандартный ввод
+  </div>
+  <div class="output-file">
+   <div class="property-title">
+    вывод
+   </div>стандартный вывод
+  </div>
+ </div>
+ <div>
+  <p>Вам задана строка $s$. Она состоит только из <span class="tex-font-style-tt">0</span> и <span class="tex-font-style-tt">1</span>.</p>
+  <p>Вы хотите, чтобы все символы <span class="tex-font-style-tt">1</span> образовывали непрерывный подотрезок. Например, в строках <span class="tex-font-style-tt">0</span>, <span class="tex-font-style-tt">1</span>, <span class="tex-font-style-tt">00111</span> и <span class="tex-font-style-tt">01111100</span> все символы <span class="tex-font-style-tt">1</span> образуют непрерывный подотрезок, а в строках <span class="tex-font-style-tt">0101</span>, <span class="tex-font-style-tt">100001</span> и <span class="tex-font-style-tt">11111111111101</span> — нет.</p>
+  <p>Вы можете удалить какое-то количество (возможно, нулевое) символов <span class="tex-font-style-tt">0</span> из строки. Чему равно минимальное количество символов <span class="tex-font-style-tt">0</span>, которое вам нужно удалить?</p>
+ </div>
+ <div class="input-specification">
+  <div class="section-title">
+   Входные данные
+  </div>
+  <p>Первая строка содержит число $t$ ($1 \le t \le 100$) — количество наборов входных данных.</p>
+  <p>Затем следуют $t$ строк. Каждая из этих строк содержит строку $s$ ($1 \le |s| \le 100$); все символы строки $s$ равны либо <span class="tex-font-style-tt">0</span> либо <span class="tex-font-style-tt">1</span>.</p>
+ </div>
+ <div class="output-specification">
+  <div class="section-title">
+   Выходные данные
+  </div>
+  <p>Выведите $t$ чисел, $i$-е число — это ответ на $i$-й набор входных данных (минимальное количество символов <span class="tex-font-style-tt">0</span>, которое нужно удалить из строки $s$).</p>
+ </div>
+ <div class="sample-tests">
+  <div class="section-title">
+   Пример
+  </div>
+  <div class="sample-test">
+   <div class="input">
+    <div class="title">
+     Входные данные
+    </div>
+    <pre>3
+010011
+0
+1111000
+</pre>
+   </div>
+   <div class="output">
+    <div class="title">
+     Выходные данные
+    </div>
+    <pre>2
+0
+0
+</pre>
+   </div>
+  </div>
+ </div>
+ <div class="note">
+  <div class="section-title">
+   Примечание
+  </div>
+  <p>В первом тестовом примере вам нужно удалить третий и четвертый символы из строки <span class="tex-font-style-tt">010011</span> (она превратится в <span class="tex-font-style-tt">0111</span>).</p>
+ </div>
+</div>
