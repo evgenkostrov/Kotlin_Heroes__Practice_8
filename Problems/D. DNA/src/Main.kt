@@ -19,7 +19,7 @@ fun main() {
     val genes = data.map{it.second}.toSet()
     val balance = IntArray(genes.max()!! + 1)
     val minBalance = IntArray(balance.size)
-    val possible = IntArray(balance.size)
+    val possible = BooleanArray(balance.size)
     fun impact(gene:Int)=if (possible[gene]&& balance[gene]==minBalance[gene]) 1 else 0
     fun process(atZero:Int)=data.scan(atZero){acc, (isStart,gene)->
         val impactBefore = impact(gene)
