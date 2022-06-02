@@ -61,5 +61,20 @@ files:
         // Write your solution here
     }
   learner_created: false
+- name: testData/1/latest_output.txt
+  visible: true
+  learner_created: true
+- name: testData/2/latest_output.txt
+  visible: true
+  learner_created: true
 feedback_link: https://codeforces.com/contest/1570/problem/C?locale=ru
-status: Unchecked
+status: Failed
+feedback:
+  message: Test '2' failed
+  time: Thu, 02 Jun 2022 20:56:10 UTC
+  expected: |-
+    64
+    2 1 4 3
+  actual: |-
+    64
+    1 2 3 4
