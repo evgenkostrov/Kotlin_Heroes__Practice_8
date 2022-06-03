@@ -29,5 +29,13 @@ files:
         // Write your solution here
     }
   learner_created: false
+- name: testData/1/latest_output.txt
+  visible: true
+  learner_created: true
+- name: testData/2/latest_output.txt
+  visible: true
+  learner_created: true
 feedback_link: https://codeforces.com/contest/1570/problem/D?locale=ru
 status: Unchecked
+feedback:
+  time: Fri, 03 Jun 2022 20:47:49 UTC
